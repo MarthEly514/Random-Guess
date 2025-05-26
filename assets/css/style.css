@@ -1,0 +1,101 @@
+@font-face {
+    font-family: manrope;
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: manrope;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-box {
+    width: 400px;
+    padding: 3em;
+    border: 2px solid #c8d2db;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.lives {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+.lives div{
+    width: 30%;
+    aspect-ratio: 1;
+    background-image: url(../img/heart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container {
+    width: 100%;
+    aspect-ratio: 5/2;
+    padding: 1em;
+    /* border: 2px solid #c8d2db;
+    border-radius: .8em; */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container p {
+    text-align: center;
+    color: #6d6d6d;
+    font-weight: 500;
+}
+
+input {
+    width: 20%;
+    height: 2em;
+    border: 2px solid #c8d2db;
+    border-radius: .5em;
+    font-size: 1.8em;
+    text-align: center;
+    color: #6d6d6d;
+    appearance: textfield;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button
+{
+    appearance: none;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #2aa7fd;
+    background-color: #e7f5fe;
+}
+
+button {
+    width: 60%;
+    height: 3em;
+    border-radius: .5em;
+    border: none;
+    font-size: 1.3em;
+    color: #ffffff;
+    background-color: #2aa7fd;
+}
+
+
+/*  ,,*/

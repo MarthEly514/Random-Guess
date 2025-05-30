@@ -97,5 +97,39 @@ button {
     background-color: #2aa7fd;
 }
 
+.score{
+    position: absolute;
+    left: 25%;
+    top: 15vh;
+    padding-inline: .5em;
+    width: max-content;
+    height: 40px;
+    border-radius: .5em;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #6d6d6d;
+    border: 2px solid #c8d2db;
+}
+#hint{
+    font-size: .7em;
+}
+.loading-sc{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/icon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*  ,,*/

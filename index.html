@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <title>Random Guess Game</title>
     <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
+    <div class="score"><p id="score">Score: 0</p></div>
     <div class="game-box">
         <div class="lives">
             <div id="l1"></div>
@@ -16,10 +19,16 @@
             <div id="l3"></div>
         </div>
         <div class="text-container">
-            <p id="dialog">Devinez un nombre entre 1 et 10!</p>
+            <p id="dialog">Devinez un nombre entre 0 et 9!</p>
         </div>
         <input type="number" id="response">
         <button id="check-res">Vérifier</button>
+        <p id="hint"></p>
+    </div>
+    <div id="ld" class="loading-sc">
+        <span class="loader"></span>
+        <p>Chargement...</p>
     </div>
 </body>
+
 </html>

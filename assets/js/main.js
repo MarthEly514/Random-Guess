@@ -9,6 +9,7 @@ const hint = document.getElementById('hint');
 const loading = document.getElementById('ld');
 const startbtn = document.getElementById('startbtn');
 const response = document.getElementById('response');
+const loader = document.getElementById('loader');
 let sc = 0;
 let inc = 15;
 let badRes = ["Aie! Réessayez", "Oups! Encore", "Oh non! Veuillez réessayer", "☹️, Réessayez"];
@@ -29,6 +30,7 @@ function begin() {
 }
 startbtn.addEventListener('click', () => {
     startbtn.innerHTML = "Chargement..."
+    loader.style.display = 'inline'
     begin();
 })
 function check() {

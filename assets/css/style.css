@@ -217,6 +217,14 @@ button {
     min-width: 80px;
     padding: .5em 1em;
 }
+.loader{
+    width: 80px;
+    aspect-ratio: 1;
+    background-image: url('');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 @keyframes bounce {
     0% {

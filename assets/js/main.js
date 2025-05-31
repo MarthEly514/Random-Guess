@@ -7,6 +7,7 @@ const l3 = document.getElementById('l3');
 const score = document.getElementById('score');
 const hint = document.getElementById('hint');
 const loading = document.getElementById('ld');
+const startbtn = document.getElementById('startbtn');
 const response = document.getElementById('response');
 let sc = 0;
 let inc = 15;
@@ -24,9 +25,10 @@ function begin() {
     setTimeout(() => {
         loading.style.display = 'none';
         console.log('loaded');
-    }, 5000);
+    }, 2000);
 }
-addEventListener('load', () => {
+startbtn.addEventListener('click', () => {
+    startbtn.innerHTML = "Chargement..."
     begin();
 })
 function check() {
@@ -61,7 +63,7 @@ function affect() {
         checkBtn.style.backgroundColor = "#ff4053";
         response.style.borderColor = "#ff4053";
         response.style.backgroundColor = "#ffc5ca";
-        response.value ='';
+        response.value = '';
 
     }
     if (life == 0) {
@@ -103,7 +105,7 @@ checkBtn.addEventListener('click', () => {
 
     } else {
         if (life > 0) {
-            dialog.innerHTML = "😒.. \nEntrez un nombre entre 1 et 10 SVP.";
+            dialog.innerHTML = "😒.. \nEntrez un nombre entre 0 et 9 SVP.";
             affect();
         } else {
             reset()
@@ -122,7 +124,7 @@ addEventListener('keydown', (e) => {
             };
         } else {
             if (life > 0) {
-                dialog.innerHTML = "😒.. \nEntrez un nombre entre 1 et 10 SVP.";
+                dialog.innerHTML = "😒.. \nEntrez un nombre entre 0 et 9 SVP.";
                 affect();
             } else {
                 reset()

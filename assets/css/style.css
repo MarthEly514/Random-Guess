@@ -37,7 +37,8 @@ body {
     justify-content: center;
     gap: .5em;
 }
-.lives div{
+
+.lives div {
     width: 30%;
     aspect-ratio: 1;
     background-image: url(../img/heart.png);
@@ -74,9 +75,9 @@ input {
     color: #6d6d6d;
     appearance: textfield;
 }
+
 input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button
-{
+input::-webkit-outer-spin-button {
     appearance: none;
 }
 
@@ -97,7 +98,7 @@ button {
     background-color: #2aa7fd;
 }
 
-.score{
+.score {
     position: absolute;
     left: 25%;
     top: 15vh;
@@ -114,21 +115,124 @@ button {
     color: #6d6d6d;
     border: 2px solid #c8d2db;
 }
-#hint{
+
+#hint {
     font-size: .7em;
 }
-.loading-sc{
+
+.loading-sc {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url(/assets/img/icon.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.deco {
+    border-radius: 10em;
+    aspect-ratio: 1;
+    background-color: lightgreen;
+    position: absolute;
+    animation-name: bounce;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.d1 {
+    top: 3em;
+    left: 9em;
+    width: 300px;
+    background-color: turquoise;
+    filter: blur(10px);
+    animation-duration: 15s;
+}
+
+.d2 {
+    top: 6em;
+    right: 3em;
+    width: 140px;
+    background-color: paleturquoise;
+    filter: blur(10px);
+    animation-duration: 5s;
+}
+
+.d3 {
+    bottom: 3em;
+    left: 29em;
+    width: 150px;
+    background-color: orchid;
+    filter: blur(2px);
+    animation-duration: 10s;
+}
+
+.d4 {
+    bottom: 8em;
+    right: 16em;
+    width: 200px;
+    background-color: rgb(148, 175, 255);
+    filter: blur(3px);
+    animation-duration: 8s;
+}
+
+.d5 {
+    top: 18em;
+    right: 25em;
+    width: 90px;
+    background-color: rgb(255, 129, 129);
+    filter: blur(2px);
+    animation-duration: 3s;
+}
+
+.d6 {
+    bottom: 3em;
+    left: -5em;
+    width: 210px;
+    background-color: rgb(255, 98, 197);
+    filter: blur(5px);
+    animation-duration: 5s;
+}
+
+.d7 {
+    bottom: -5em;
+    right: 30em;
+    width: 230px;
+    background-color: lemonchiffon;
+    filter: blur(10px);
+    animation-duration: 2s;
+}
+
+.loading-sc h2 {
+    text-align: center;
+    width: 20%;
+    min-width: 100px;
+    margin-block: 2em;
+    font-size: 3em;
+}
+
+.loading-sc button {
+    max-width: 200px;
+    min-width: 80px;
+    padding: .5em 1em;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-6%);
+    }
+    75% {
+        transform: translateY(8%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 

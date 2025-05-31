@@ -213,17 +213,22 @@ button {
 }
 
 .loading-sc button {
+    z-index: 50;
     max-width: 200px;
     min-width: 80px;
     padding: .5em 1em;
 }
-.loader{
+#loader{
     width: 80px;
     aspect-ratio: 1;
+    margin-top: 2em;
     background-image: url('/assets/img/loader.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
@@ -236,6 +241,19 @@ button {
     }
     75% {
         transform: translateY(8%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0 deg);
+    }
+
+    50% {
+        transform: rotate();
     }
 
     100% {

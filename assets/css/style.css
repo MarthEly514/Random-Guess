@@ -229,6 +229,8 @@ button {
     animation-name: rotate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-duration: 2s;
+    display: none;
 }
 
 @keyframes bounce {
@@ -249,15 +251,11 @@ button {
 }
 @keyframes rotate {
     0% {
-        transform: rotate(0 deg);
-    }
-
-    50% {
-        transform: rotate();
+        transform: rotate(0deg);
     }
 
     100% {
-        transform: translateY(0);
+        transform: rotate(360deg);
     }
 }
 

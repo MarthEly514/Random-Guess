@@ -142,8 +142,8 @@ button {
 }
 
 .d1 {
-    top: 3em;
-    left: 9em;
+    top: 3%;
+    left: 9%;
     width: 300px;
     background-color: turquoise;
     filter: blur(10px);
@@ -151,8 +151,8 @@ button {
 }
 
 .d2 {
-    top: 6em;
-    right: 3em;
+    top: 6%;
+    right: 3%;
     width: 140px;
     background-color: paleturquoise;
     filter: blur(10px);
@@ -160,8 +160,8 @@ button {
 }
 
 .d3 {
-    bottom: 3em;
-    left: 29em;
+    bottom: 3%;
+    left: 29%;
     width: 150px;
     background-color: orchid;
     filter: blur(2px);
@@ -169,8 +169,8 @@ button {
 }
 
 .d4 {
-    bottom: 8em;
-    right: 16em;
+    bottom: 8%;
+    right: 16%;
     width: 200px;
     background-color: rgb(148, 175, 255);
     filter: blur(3px);
@@ -178,8 +178,8 @@ button {
 }
 
 .d5 {
-    top: 18em;
-    right: 25em;
+    top: 18%;
+    right: 25%;
     width: 90px;
     background-color: rgb(255, 129, 129);
     filter: blur(2px);
@@ -187,8 +187,8 @@ button {
 }
 
 .d6 {
-    bottom: 3em;
-    left: -5em;
+    bottom: 3%;
+    left: -5%;
     width: 210px;
     background-color: rgb(255, 98, 197);
     filter: blur(5px);
@@ -196,8 +196,8 @@ button {
 }
 
 .d7 {
-    bottom: -5em;
-    right: 30em;
+    bottom: -5%;
+    right: 30%;
     width: 230px;
     background-color: lemonchiffon;
     filter: blur(10px);
@@ -206,10 +206,11 @@ button {
 
 .loading-sc h2 {
     text-align: center;
+    min-width: 200px;
     width: 20%;
-    min-width: 100px;
     margin-block: 2em;
     font-size: 3em;
+    z-index: 50;
 }
 
 .loading-sc button {
